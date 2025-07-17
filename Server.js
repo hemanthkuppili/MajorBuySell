@@ -6,7 +6,8 @@ const port = 3000;
 
 const connectDB = require("./DB/db");
 const authRoutes = require("./Router/auth.route");
-const productRoutes = require("./Router/product.route");
+const productRoutes = require("./Router/Product.route");
+
 
 app.use(express.json());
 
