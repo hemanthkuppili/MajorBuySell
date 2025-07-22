@@ -7,9 +7,11 @@ const port = 3000;
 const connectDB = require("./DB/db");
 const authRoutes = require("./Router/auth.route");
 const productRoutes = require("./Router/Product.route");
+const cors = require('cors');
 
 
 app.use(express.json());
+app.use(cors());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
